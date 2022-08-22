@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Car Prediction Model</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../static/css/styles.css'>
+</head>
+<body>
+    <div class="container">
+        <h1>Car Performance Prediction Model</h1>
+        <form action="http://localhost:9000/login" method="post">
+            <input type="number" class="inputs" name="cyl" placeholder="Number of Cylinders"  />
+            <input type="number" step="any" class="inputs" name="dis" placeholder="Displacement"  />
+            <input type="number" class="inputs" name="hp" placeholder="Horsepower"  />
+            <input type="number" class="inputs" name="w" placeholder="Weight"  />
+            <input type="number" step="any" class="inputs" name="a" placeholder="Acceleration"  />
+            <input type="number" class="inputs" name="my" placeholder="Model year"  />
+            <input type="number" class="inputs" name="ori" placeholder="Origin"  />
+            <input type="submit" value="Check for Performance" />
+        </form>
+        <p>{{label}}</p>
+    </div>
+</body>
+</html>
